@@ -7,7 +7,7 @@ import base64
 import streamlit as st
 
 from streamlit.components.v1 import components
-import jieba
+
 def bar_bg(img):
     last = 'png'
     st.markdown(
