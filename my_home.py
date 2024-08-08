@@ -1,4 +1,4 @@
-from pyecharts import options as opts
+
 import streamlit as st
 import pandas as pd
 from PIL import Image
