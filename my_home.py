@@ -1,4 +1,3 @@
-from pyecharts.charts import WordCloud
 from pyecharts import options as opts
 import streamlit as st
 import pandas as pd
@@ -397,14 +396,15 @@ elif page == "词云图":
     
     uploaded_file = st.file_uploader("上传txt文件")
     if uploaded_file is not None:
-        str_data = uploaded_file.read().decode("utf-8")
-        ciyun(str_data)
-        html_file = open('词云.html', 'r',encoding = 'utf-8')
-        html_content = html_file.read()
-        # 使用components.v1.html来显示HTML内容
-        st.components.v1.html(html_content, width = 1300,height=st.session_state.get("height", 800)) # 你可以根据需要调整height
-        #关闭文件
-        html_file.close()
+        pass
+        # str_data = uploaded_file.read().decode("utf-8")
+        # ciyun(str_data)
+        # html_file = open('词云.html', 'r',encoding = 'utf-8')
+        # html_content = html_file.read()
+        # # 使用components.v1.html来显示HTML内容
+        # st.components.v1.html(html_content, width = 1300,height=st.session_state.get("height", 800)) # 你可以根据需要调整height
+        # #关闭文件
+        # html_file.close()
     else:
         pass
 elif page == "网址导航":
